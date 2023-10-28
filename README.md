@@ -16,12 +16,9 @@ $ g++ -o find_in_file main.cpp printLine.cpp readLine.cpp
 ```
 $ ./find_in_file path_to_file pattern_to_search
 ```
-Вкладка "**Settings**":
-
-![Иллюстрация к проекту](https://github.com/rudikrudik/find_in_file/blob/master/image/linux.jpg)
 
 
-
+![Иллюстрация к проекту](https://github.com/rudikrudik/find_in_file/blob/66dfd13587b44d2069a097f0ea8e7a46d28ceca2/image/linux.jpg)
 
 ![Иллюстрация к проекту](https://github.com/rudikrudik/find_in_file/blob/master/image/windows.jpg)
 
