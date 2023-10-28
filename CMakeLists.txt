@@ -5,7 +5,7 @@ project(find_in_file)
 add_executable(find_in_file
         main.cpp
         readLine.cpp
-        printLIne.cpp
+        printLine.cpp
         )
 
 set_target_properties(find_in_file PROPERTIES
