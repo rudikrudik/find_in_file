@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
 
     if(argc < 3 || argc > 3){
         if(argc == 2 && static_cast<std::string>(argv[1]) == "--version"){
-            std::cout << version();
+            std::cout << version() << std::endl;
         }
         else {
             std::cout << "Usage: findinfile [PATH_TO_FILE] [FIND_PATTERN]" << std::endl;
