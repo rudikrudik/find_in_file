@@ -3,7 +3,7 @@ name: 'release Find in File'
 on:
   push:
     branches:
-      - find_in_file
+      - main
       - feature/github_actions
 
 jobs:
