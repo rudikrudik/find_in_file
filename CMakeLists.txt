@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.8)
 set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
 set(PROJECT_VERSION 0.0.${PATCH_VERSION})
 
-project(find_in_file VERSION ${PROJECT_VERSION})
+project(findinfile VERSION ${PROJECT_VERSION})
 
 configure_file(src/version/version.h.in src/version/version.h @ONLY)
 
