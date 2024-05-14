@@ -18,9 +18,9 @@ namespace printline {
     void printLine(const std::string &line, const std::string &pattern,
                    unsigned int &countLine, unsigned int &countPattern) {
 
-        unsigned int start = 0;
-        unsigned int lenPattern = pattern.length();
-        unsigned int position = 0;
+        std::size_t start = 0;
+        std::size_t lenPattern = pattern.length();
+        std::size_t position = 0;
 
         while (line.find(pattern, position) != std::string::npos) {
             position = line.find(pattern, position);

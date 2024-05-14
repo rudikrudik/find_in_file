@@ -1,11 +1,12 @@
-#include "readLine.h"
-
 #include <iostream>
 #include <fstream>
 #include <string>
 
+#include "readLine.h"
+#include "version/versionNum.h"
+
 #ifdef _WIN32
-#include <windows.h>
+#include <Windows.h>
 #endif
 
 
@@ -19,8 +20,14 @@ int main(int argc, char *argv[]) {
 #endif
 
     if(argc < 3 || argc > 3){
-        std::cout << "Usage: find_in_file [PATH_TO_FILE] [FIND_PATTERN]" << std::endl;
-        return 0;
+        if(argc == 2 && static_cast<std::string>(argv[1]) == "--version"){
+            std::cout << version();
+        }
+        else {
+            std::cout << "Usage: findinfile [PATH_TO_FILE] [FIND_PATTERN]" << std::endl;
+            std::cout << "Version: findinfile --version" << std::endl;
+            return 0;
+        }
     }
     else {
         std::ifstream file(argv[1]);
